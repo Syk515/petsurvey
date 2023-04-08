@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pet Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pet Survey Form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1 id="title">Pet Survey Form</h1>
+            <p id="description">Thank you for taking the time to answer our questions!</p>
+        </header>
+        <!-- FORM -->
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" />
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="Enter your Email" />
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age(optional)</label>
+                <input id="number" name="number" type="number" class="form-control" placeholder="Age" min="10"
+                    max="100" />
+            </div>
+
+            <div class="form-group">
+                <p>Which pet do you want to have in the future?</p>
+                <select id="dropdown" name="dropdown" class="form-control">
+                    <option value="">Select one</option>
+                    <option value="1">Dog</option>
+                    <option value="2">Cat</option>
+                    <option value="3">Bird</option>
+                    <option value="4">Duck</option>
+                    <option value="5">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you travel with your pet?</p>
+                <label for="definitely"><input id="definitely" type="radio" name="question-type" value="definitely"
+                        class="input-radio" checked /> Definitely</label>
+                <label for="maybe"><input id="maybe" type="radio" name="question-type" value="maybe"
+                        class="input-radio" /> Maybe</label>
+                <label for="notsure"><input id="notsure" type="radio" name="question-type" value="notsure"
+                        class="input-radio" /> Not sure</label>
+            </div>
+
+            <div class="form-group">
+                <p>What do you want to do with your pet?</p>
+                <label for="doingwithpet"><input id="doingwithpet" type="checkbox" name="doingwithpet" value="walking"
+                        class="input-checkbox" checked> Walking</label>
+                <label for="doingwithpet"><input id="doingwithpet" type="checkbox" name="doingwithpet" value="running"
+                        class="input-checkbox"> Running</label>
+                <label for="doingwithpet"><input id="doingwithpet" type="checkbox" name="doingwithpet" value="watching"
+                        class="input-checkbox"> Watching a movie</label>
+                <label for="doingwithpet"><input id="doingwithpet" type="checkbox" name="doingwithpet" value="sleeping"
+                        class="input-checkbox"> Sleeping</label>
+            </div>
+            <!-- COMMENTS -->
+            <div class="form-group">
+                <p>Please give us your comments!</p>
+                <textarea id="comments" name="comment" class="input-textarea"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            <!-- SUBMIT -->
+            <div class="form-group">
+                <button id="submit" type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
